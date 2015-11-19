@@ -1,0 +1,4 @@
+	<div ng-show="showAlert" ng-repeat="alert in w.alerts">
+		<label class="btn btn-danger" ng-click="isCollapsed = !isCollapsed">{{alert.title}}</label>
+		<div class="well well-lg" uib-collapse="!isCollapsed">{{alert.description}}</div>
+	</div>
